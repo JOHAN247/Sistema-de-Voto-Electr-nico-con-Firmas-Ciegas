@@ -15,6 +15,7 @@ CREATE TABLE IF NOT EXISTS elections (
     title TEXT NOT NULL,
     code TEXT UNIQUE NOT NULL, -- Código de 6 dígitos único
     status TEXT DEFAULT 'PENDING', -- PENDING, ACTIVE, FINISHED
+    options TEXT NOT NULL,
     created_by INTEGER NOT NULL,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     FOREIGN KEY (created_by) REFERENCES users(id)
