@@ -17,8 +17,10 @@ La aplicación permite simular un entorno electoral real donde el voto es **100%
 
 ## 🖼️ Vista previa
 
-*Pantalla de votación activa y resultados oficiales en tiempo real:*
+*Pantalla principal:*
 ![Screenshot de la app](img/screenshot1.png)
+*Pantalla de votación activa y resultados oficiales en tiempo real:*
+![Screenshot de la app](img/screenshot2.png)
 
 ---
 
