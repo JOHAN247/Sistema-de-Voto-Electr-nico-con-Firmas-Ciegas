@@ -9,7 +9,7 @@ La aplicación permite simular un entorno electoral real donde el voto es **100%
 ## 🚀 Demo en línea
 
 **App desplegada en Streamlit:**  
-[🔗 Abrir Sistema de Votación](https://TU-APP.streamlit.app)
+[🔗 Abrir Sistema de Votación]([https://TU-APP.streamlit.app](https://sistema-de-voto-electr-nico-con-firmas-ciegas-rmui97mmsihybmwg.streamlit.app/)
 
 > *Nota: Si el enlace no funciona o carga lento, es posible que la aplicación esté inactiva ("dormida"). Solo espera unos segundos a que el contenedor de Streamlit Cloud se vuelva a iniciar.*
 
@@ -18,7 +18,7 @@ La aplicación permite simular un entorno electoral real donde el voto es **100%
 ## 🖼️ Vista previa
 
 *Pantalla de votación activa y resultados oficiales en tiempo real:*
-![Screenshot de la app](img/screenshot.png)
+![Screenshot de la app](img/screenshot1.png)
 
 ---
 
