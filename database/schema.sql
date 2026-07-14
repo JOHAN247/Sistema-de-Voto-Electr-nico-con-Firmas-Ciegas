@@ -1,7 +1,7 @@
--- Habilitar restricciones de claves foráneas en SQLite por sesión
+
 PRAGMA foreign_keys = ON;
 
--- Tabla de Usuarios Registrados
+
 CREATE TABLE IF NOT EXISTS users (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     username TEXT UNIQUE NOT NULL,
@@ -9,7 +9,7 @@ CREATE TABLE IF NOT EXISTS users (
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
--- Tabla de Elecciones (Creadas estilo Kahoot)
+
 CREATE TABLE IF NOT EXISTS elections (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     title TEXT NOT NULL,
@@ -21,8 +21,7 @@ CREATE TABLE IF NOT EXISTS elections (
     FOREIGN KEY (created_by) REFERENCES users(id)
 );
 
--- Tabla de Control de Participación (Evita el doble voto)
--- Relaciona qué usuario ya pidió firma para qué elección.
+
 CREATE TABLE IF NOT EXISTS election_participants (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     election_id INTEGER NOT NULL,
@@ -33,9 +32,7 @@ CREATE TABLE IF NOT EXISTS election_participants (
     UNIQUE(election_id, user_id) -- Un usuario solo se registra una vez por elección
 );
 
--- Tabla de Votos Emitidos (Buzón Anónimo)
--- NOTA DE ARQUITECTURA: Esta tabla NO tiene relación con la tabla 'users'.
--- Está completamente aislada para garantizar el anonimato total.
+
 CREATE TABLE IF NOT EXISTS votes (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     election_id INTEGER NOT NULL,
